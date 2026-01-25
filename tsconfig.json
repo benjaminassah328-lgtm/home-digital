@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "app/src/components/Login.jsx", "components/bureautique/Products.Jsx"  ],
   "exclude": ["node_modules"]
 }
