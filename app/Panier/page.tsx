@@ -1,10 +1,10 @@
 import Hero from "@/components/Panier/Hero";
-import Products from "@/components/Panier/Panier";
+import PanierStore from "@/components/Panier/PanierStore";
 export default function Page(){
     return(
-        <main className="justify-center items-center">
+        <main className="justify-center items-center ">
            <Hero />
-<Products />
+<PanierStore/>
         </main>
     )
 }

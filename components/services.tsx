@@ -2,7 +2,7 @@ import { Van, MessageCircleReply, PiggyBank, Headset } from "lucide-react";
 
 export default function Services() {
   return (
-    <section className="bg-linear-to-r from-indigo-950 via-purple-800 to-black py-12 px-4">
+    <section className="bg-linear-to-r from-black via-purple-800 to-black py-14 px-4">
       
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         

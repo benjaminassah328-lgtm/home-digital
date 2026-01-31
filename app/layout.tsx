@@ -50,7 +50,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${orbitron.variable} ${lora.variable} ${raleway.variable} ${pacifico.variable} antialiased`}
       >
 
-        <div className="w-full  top-0 z-50 bg-white ">
+        <div className="w-full  top-0 z-50 bg-white pt-24 ">
           <Header />
          
         </div>

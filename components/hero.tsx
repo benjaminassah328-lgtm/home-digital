@@ -33,7 +33,10 @@ export default function Hero() {
           className="mt-6 inline-block bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-full text-sm sm:text-base font-semibold transition"
         >
           Découvrir nos produits
+          
         </Link>
+
+        
       </div>
     </section>
   );

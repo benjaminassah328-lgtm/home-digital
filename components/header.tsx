@@ -1,15 +1,31 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ShoppingCart, User, Search, Menu, X } from "lucide-react";
+import { useEffect, useState } from "react";
+import { getTotalQuantite } from "@/components/Panier/Checkout"
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [nbArticles, setNbArticles] = useState(0);
+  useEffect(() => {
+    const updatePanier = () => {
+      setNbArticles(getTotalQuantite());
+    };
+   
+
+    updatePanier();
+
+    window.addEventListener("panier-update", updatePanier);
+
+    return () => {
+      window.removeEventListener("panier-update", updatePanier);
+    };
+  }, []);
 
   return (
-    <header className="bg-white shadow-md px-4 md:px-10 py-4">
+    <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md px-4 md:px-10 py-4">
       <div className="flex items-center justify-between">
 
         {/* LOGO */}
@@ -17,8 +33,8 @@ export default function Header() {
           <Image
             src="/images/logo2.jpeg"
             alt="Home Digital"
-            width={70}
-            height={70}
+            width={100}
+            height={100}
             className="rounded-xl"
           />
         </Link>
@@ -42,8 +58,15 @@ export default function Header() {
             <Search className="w-4 h-4 text-gray-500 absolute left-3 top-1/2 -translate-y-1/2" />
           </div>
 
-          <Link href="/Panier">
+          <Link href="/Panier" className="relative">
             <ShoppingCart className="w-6 h-6 text-gray-700 hover:text-blue-600" />
+
+            {nbArticles > 0 && (
+              <span className="absolute -top-2 -right-2 bg-red-600 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+                {nbArticles}
+              </span>
+              
+            )}
           </Link>
 
           <Link href="/Contact">
@@ -63,7 +86,7 @@ export default function Header() {
       {/* MENU MOBILE */}
       {open && (
         <div className="md:hidden mt-4 space-y-4 border-t pt-4">
-          
+
           <div className="relative">
             <input
               type="text"
@@ -81,9 +104,16 @@ export default function Header() {
           </nav>
 
           <div className="flex gap-4 pt-2">
-            <Link href="/Panier">
-              <ShoppingCart className="w-6 h-6 text-gray-700" />
-            </Link>
+            <Link href="/Panier" className="relative">
+  <ShoppingCart className="w-6 h-6 text-gray-700" />
+
+  {nbArticles > 0 && (
+    <span className="absolute -top-2 -right-2 bg-red-600 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+      {nbArticles}
+    </span>
+  )}
+</Link>
+
             <Link href="/Contact">
               <User className="w-6 h-6 text-gray-700" />
             </Link>
