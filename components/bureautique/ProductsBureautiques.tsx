@@ -49,7 +49,7 @@ export default function ProduitsBureautique() {
           <div key={p.id} className="bg-white p-4 rounded-xl shadow hover:scale-105 transition text-center">
             <Image src={p.image} alt={p.nom} width={250} height={250} className="rounded-xl mx-auto" />
             <h3 className="font-lora mt-2">{p.nom}</h3>
-            <p className="font-lora">{p.prix} F</p>
+            <p className="font-lora md:text-black">{p.prix} F</p>
 
             <button
               onClick={() => {
