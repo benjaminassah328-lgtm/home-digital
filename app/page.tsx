@@ -1,7 +1,7 @@
 import Header from "@/components/header"
 import Hero from "@/components/hero"
 import Products from "@/components/products"
-import Footer from "@/components/footer"
+import Services from "@/components/service"
 export default function Homepage(){
 
   return(
@@ -9,7 +9,7 @@ export default function Homepage(){
         
      
       <Hero/>
-
+<Services/>
 <Products/>
     </main>
   )

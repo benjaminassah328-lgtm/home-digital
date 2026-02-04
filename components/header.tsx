@@ -25,7 +25,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md px-4 md:px-10 py-4 text-sm text-black placeholder-gray-400 ">
+    <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md px-4 md:px-10 py-4 text-sm text-black placeholder-black ">
       <div className="flex items-center justify-between">
 
         {/* LOGO */}
@@ -45,6 +45,8 @@ export default function Header() {
           <Link href="/produits" className="hover:text-blue-600">Produits</Link>
           <Link href="/Contact" className="hover:text-blue-600">Contact</Link>
           <Link href="/Panier" className="hover:text-blue-600">Panier</Link>
+                    <Link href="/APropos" className="hover:text-blue-600">A Propos</Link>
+
         </nav>
 
         {/* ACTIONS DESKTOP */}
@@ -114,6 +116,8 @@ export default function Header() {
             <Link href="/produits" onClick={() => setOpen(false)}>Produits</Link>
             <Link href="/Contact" onClick={() => setOpen(false)}>Contact</Link>
             <Link href="/Panier" onClick={() => setOpen(false)}>Panier</Link>
+                        <Link href="/A Propos" onClick={() => setOpen(false)}>A Propos</Link>
+
           </nav>
 
           <div className="flex gap-4 pt-2">
