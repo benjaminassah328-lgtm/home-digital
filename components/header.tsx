@@ -25,7 +25,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md px-4 md:px-10 py-4">
+    <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md px-4 md:px-10 py-4 text-sm text-black placeholder-gray-400 ">
       <div className="flex items-center justify-between">
 
         {/* LOGO */}
@@ -74,13 +74,26 @@ export default function Header() {
           </Link>
         </div>
 
-        {/* BOUTON MOBILE */}
-        <button
-          onClick={() => setOpen(!open)}
-          className="md:hidden"
-        >
-          {open ? <X /> : <Menu />}
-        </button>
+        {/* ACTIONS MOBILE */}
+<div className="flex items-center gap-4 md:hidden">
+
+  {/* Panier mobile VISIBLE */}
+  <Link href="/Panier" className="relative">
+    <ShoppingCart className="w-6 h-6 text-gray-700" />
+
+    {nbArticles > 0 && (
+      <span className="absolute -top-2 -right-2 bg-red-600 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+        {nbArticles}
+      </span>
+    )}
+  </Link>
+
+  {/* Hamburger */}
+  <button onClick={() => setOpen(!open)}>
+    {open ? <X /> : <Menu />}
+  </button>
+</div>
+
       </div>
 
       {/* MENU MOBILE */}
@@ -104,20 +117,20 @@ export default function Header() {
           </nav>
 
           <div className="flex gap-4 pt-2">
-            <Link href="/Panier" className="relative">
-  <ShoppingCart className="w-6 h-6 text-gray-700" />
+  <Link href="/Panier" className="relative">
+    <ShoppingCart className="w-6 h-6 text-gray-700" />
+    {nbArticles > 0 && (
+      <span className="absolute -top-2 -right-2 bg-red-600 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+        {nbArticles}
+      </span>
+    )}
+  </Link>
 
-  {nbArticles > 0 && (
-    <span className="absolute -top-2 -right-2 bg-red-600 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
-      {nbArticles}
-    </span>
-  )}
-</Link>
+  <Link href="/Contact">
+    <User className="w-6 h-6 text-gray-700" />
+  </Link>
+</div>
 
-            <Link href="/Contact">
-              <User className="w-6 h-6 text-gray-700" />
-            </Link>
-          </div>
         </div>
       )}
     </header>
