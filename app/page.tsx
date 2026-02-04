@@ -10,7 +10,7 @@ export default function Homepage(){
         
      
       <Hero/>
-<Services/>
+
 <Products/>
     </main>
   )

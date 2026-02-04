@@ -20,12 +20,7 @@ export default function Hero() {
         "
       >
         {/* Texte */}
-        <div className="md:w-1/2 text-center md:text-left">
-          <h1 className="text-white font-bold font-epilogue text-5xl leading-tight">
-            Vos plats préférés,<br />
-            livrés chez vous, bien chaud
-          </h1>
-        </div>
+        
 
         {/* Image */}
         <div
