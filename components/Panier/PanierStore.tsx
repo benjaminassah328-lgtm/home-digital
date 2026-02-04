@@ -29,8 +29,8 @@ export default function PanierStore() {
               className="flex justify-between items-center border-b py-4"
             >
               <div>
-                <p className="font-semibold ">{item.nom}</p>
-                <p className="text-sm text-gray-600 font-lora">{item.prix} F</p>
+                <p className="font-semibold text-gray-700 md:text-gray-900">{item.nom}</p>
+                <p className="text-sm text-gray-600 font-lora  md:text-gray-900">{item.prix} F</p>
               </div>
 
               <input

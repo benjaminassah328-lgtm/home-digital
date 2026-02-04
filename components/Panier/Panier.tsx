@@ -67,7 +67,7 @@ export default function Products() {
                 ajouterAuPanier(p);
                 refresh();
               }}
-              className="mt-2 px-4 py-2 bg-blue-400 text-white rounded-lg font-lora"
+              className="mt-2 px-4 py-2 bg-blue-400 text-white rounded-lg font-lora hover:text-violet-400 transition"
             >
               Ajouter au panier
             </button>
