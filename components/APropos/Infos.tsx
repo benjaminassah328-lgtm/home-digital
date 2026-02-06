@@ -188,7 +188,7 @@ export default function Infos() {
                             <p className="text-gray-600 font-lora italic mb-2">
                                 "Les jeux vidéo sont top, et la livraison a été impeccable. Je recommande !"
                             </p>
-                            <p className="text-gray-800 font-bold">- Jean D., Lyon</p>
+                            <p className="text-gray-800 font-bold">- Ange Elysée., Bouaké</p>
                         </motion.div>
                     </div>
                 </motion.div>
