@@ -67,7 +67,7 @@ export default function Infos() {
                 </motion.p>
                 <div className="flex justify-center items-center hadow hover:scale-105 transition bg-transparent  rounded-3xl mb-10">
                      <Image
-                            src="/images/referenceHG.jpeg"
+                            src="/images/referenceHG2.jpeg"
                             alt="Home Digital"
 
                             width={500}
