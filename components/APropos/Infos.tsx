@@ -11,12 +11,12 @@ type Member = {
 const team: Member[] = [
     {
         name: "Benjamin Assah",
-        role: "Fondateur & CEO",
+        role: "Fondateur & CEO & developpeur fullstack",
         image: "/images/logo2.jpeg",
     },
     {
         name: "Diallo Alpha",
-        role: "Directrice Marketing",
+        role: "développeur Web",
         image: "/images/logo2.jpeg",
     },
     {
@@ -33,17 +33,27 @@ const team: Member[] = [
 
 export default function Infos() {
     return (
-        <section className="flex flex-col items-center min-h-screen bg-gray-50 py-12 px-6">
-            <div className="max-w-5xl w-full text-center">
-                {/* Introduction */}
-                <motion.h1
-                    className="text-4xl font-bold text-blue-600 mb-6"
+        <section className="flex flex-col items-center min-h-screen bg-gray-50 py-12 px-6 ">
+            <div className="max-w-5xl w-full text-center mt-2">
+                <div className="flex flex-col-reverse justify-center items-center bg-white rounded-3xl ">
+                    <Image
+                            src="/images/logo2.jpeg"
+                            alt="Home Digital"
+                            width={100}
+                            height={100}
+                            className="rounded-xl -mt-5"
+                          />
+                          <motion.h1
+                    className="text-4xl font-bold text-blue-600 mb-6 text-center font-raleway    "
                     initial={{ opacity: 0, y: -40 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
                     À propos de HomeDigital
                 </motion.h1>
+                </div>
+                {/* Introduction */}
+                
 
                 <motion.p
                     className="text-lg text-gray-700 mb-10 font-lora"
@@ -55,6 +65,17 @@ export default function Infos() {
                     Nous proposons une gamme variée d&apos;articles bureautiques, écouteurs et jeux vidéo,
                     conçus pour améliorer votre quotidien.
                 </motion.p>
+                <div className="flex justify-center items-center hadow hover:scale-105 transition bg-transparent  rounded-3xl mb-10">
+                     <Image
+                            src="/images/referenceHG.jpeg"
+                            alt="Home Digital"
+
+                            width={500}
+                            height={300}
+                            className="rounded-xl"
+                            
+                          />
+                </div>
 
                 {/* Mission */}
                 <motion.div
@@ -77,7 +98,7 @@ export default function Infos() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <h2 className="text-2xl font-semibold text-blue-600 mb-6">Nos Valeurs</h2>
+                    <h2 className="text-2xl font-semibold text-blue-600 sm:text-blue-600 mb-6">Nos Valeurs</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {[
                             { icon: "🚀", title: "Innovation", text: "Toujours à la pointe." },
@@ -139,7 +160,7 @@ export default function Infos() {
                         {[...team, ...team].map((member, index) => (
                             <div
                                 key={index}
-                                className="min-w-[220px] bg-white shadow-md rounded-lg p-4 text-center flex flex-col items-center"
+                                className="min-w-55 bg-white shadow-md rounded-lg p-4 text-center flex flex-col items-center"
                             >
                                 {/* IMAGE */}
                                 <div className="relative w-20 h-20 mb-4">
