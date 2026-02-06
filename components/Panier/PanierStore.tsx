@@ -30,7 +30,7 @@ export default function PanierStore() {
             >
               <div>
                 <p className="font-semibold text-gray-700 md:text-gray-900">{item.nom}</p>
-                <p className="text-sm text-gray-600 font-lora  md:text-gray-900">{item.prix} F</p>
+                <p className="text-sm text-gray-600 font-lora ">{item.prix} F</p>
               </div>
 
               <input

@@ -1,4 +1,4 @@
-import Infos from "@/components/A Propos/Infos"
+import Infos from "@/components/APropos/Infos"
 
 export default function Page(){
     return(
