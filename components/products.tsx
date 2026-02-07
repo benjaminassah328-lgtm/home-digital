@@ -27,24 +27,32 @@ export default function Products() {
         Nos Produits
       </h2>
 
-      {/* CONTENEUR ANIMÉ */}
       <motion.div
-        className="flex gap-6"
-        animate={{ x: [0, -600] }}
+        className="flex gap-4 md:gap-6"
+        animate={{ x: ["0%", "-50%"] }}
         transition={{
           repeat: Infinity,
           repeatType: "loop",
-          duration: 20,
+          duration: 30, // plus lent = plus fluide
           ease: "linear",
         }}
       >
         {[...products, ...products].map((product, index) => (
           <div
             key={index}
-            className="min-w-62.5 bg-white/10 backdrop-blur-lg rounded-2xl p-4 text-center"
+            className="
+              min-w-45
+              sm:min-w-50
+              md:min-w-60
+              bg-white/10
+              backdrop-blur-lg
+              rounded-2xl
+              p-4
+              text-center
+            "
           >
             {/* IMAGE */}
-            <div className="relative w-full h-40 overflow-hidden rounded-xl">
+            <div className="relative w-full h-32 sm:h-36 md:h-40 overflow-hidden rounded-xl">
               <Image
                 src={product.img}
                 alt={product.name}
@@ -54,7 +62,7 @@ export default function Products() {
             </div>
 
             {/* TEXTE */}
-            <h3 className="text-white mt-4 font-semibold">
+            <h3 className="text-white mt-4 font-semibold text-sm sm:text-base">
               {product.name}
             </h3>
           </div>
