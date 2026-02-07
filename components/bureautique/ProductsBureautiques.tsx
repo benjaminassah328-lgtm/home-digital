@@ -56,7 +56,7 @@ export default function ProduitsBureautique() {
                 ajouterAuPanier(p);
                 refresh();
               }}
-              className="mt-2 px-4 py-2 bg-blue-500 text-white sm:text-black rounded-lg"
+              className="mt-2 px-4 py-2 bg-blue-500 text-white  rounded-lg"
             >
               Ajouter au panier
             </button>

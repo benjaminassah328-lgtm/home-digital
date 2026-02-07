@@ -1,6 +1,15 @@
-import Image from "next/image";
+"use client";
 
-const products = [
+import Image from "next/image";
+import { motion } from "framer-motion";
+
+type Product = {
+  id: number;
+  img: string;
+  name: string;
+};
+
+const products: Product[] = [
   { id: 1, img: "/images/pc.jpeg", name: "Ordinateur" },
   { id: 2, img: "/images/clavier.jpeg", name: "Clavier" },
   { id: 3, img: "/images/casque.jpeg", name: "Casque" },
@@ -13,35 +22,44 @@ const products = [
 
 export default function Products() {
   return (
-    <section className="bg-linear-to-b from-black via-indigo-950 to-black py-14 px-4">
-      
+    <section className="bg-linear-to-b from-black via-indigo-950 to-black py-14 px-4 overflow-hidden">
       <h2 className="text-white text-2xl md:text-3xl font-orbitron text-center mb-10">
         Nos Produits
       </h2>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        
-        {products.map((product) => (
+      {/* CONTENEUR ANIMÉ */}
+      <motion.div
+        className="flex gap-6"
+        animate={{ x: [0, -600] }}
+        transition={{
+          repeat: Infinity,
+          repeatType: "loop",
+          duration: 20,
+          ease: "linear",
+        }}
+      >
+        {[...products, ...products].map((product, index) => (
           <div
-            key={product.id}
-            className="group bg-white/10 backdrop-blur-lg rounded-2xl p-4 hover:scale-105 transition"
+            key={index}
+            className="min-w-62.5 bg-white/10 backdrop-blur-lg rounded-2xl p-4 text-center"
           >
-            <div className="relative w-full h-48 overflow-hidden rounded-xl">
+            {/* IMAGE */}
+            <div className="relative w-full h-40 overflow-hidden rounded-xl">
               <Image
                 src={product.img}
                 alt={product.name}
                 fill
-                className="object-cover group-hover:scale-110 transition"
+                className="object-cover"
               />
             </div>
 
-            <h3 className="text-white text-center mt-4 font-semibold">
+            {/* TEXTE */}
+            <h3 className="text-white mt-4 font-semibold">
               {product.name}
             </h3>
           </div>
         ))}
-
-      </div>
+      </motion.div>
     </section>
   );
 }

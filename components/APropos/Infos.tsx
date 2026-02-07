@@ -149,7 +149,7 @@ export default function Infos() {
                 <div className="overflow-hidden w-full mb-16">
                     <motion.div
                         className="flex gap-6"
-                        animate={{ x: [0, -500] }}
+                        animate={{ x: [0, -300] }}
                         transition={{
                             repeat: Infinity,
                             repeatType: "loop",
