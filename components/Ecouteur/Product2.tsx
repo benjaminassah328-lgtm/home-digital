@@ -40,7 +40,7 @@ export default function ProduitsCasque() {
                 ajouterAuPanier(p);
                 refresh();
               }}
-              className="mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg"
+              className="mt-2 px-4 py-2  bg-violet-600 hover:bg-violet-700 text-white rounded-lg"
             >
               Ajouter au panier
             </button>

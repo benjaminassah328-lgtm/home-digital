@@ -8,7 +8,7 @@ export default function ProductsNav() {
         
         {/* Titre Produits */}
         <div className="text-violet-400 text-lg font-semibold">
-          <Link href="/produits" className="hover:text-violet-400 transition">
+          <Link href="/produits" className="hover:text-violet-600 transition">
             Produits
           </Link>
         </div>
@@ -19,7 +19,7 @@ export default function ProductsNav() {
             <li>
               <Link
                 href="/produits/Bureautique"
-                className="hover:text-violet-400 transition"
+                className="hover:text-violet-600 transition"
               >
                 Bureautique
               </Link>
@@ -27,7 +27,7 @@ export default function ProductsNav() {
             <li>
               <Link
                 href="/produits/Ecouteur"
-                className="hover:text-violet-400 transition"
+                className="hover:text-violet-600 transition"
               >
                 Écouteurs
               </Link>
@@ -35,7 +35,7 @@ export default function ProductsNav() {
             <li>
               <Link
                 href="/produits/Jeux_video"
-                className="hover:text-violet-400 transition"
+                className="hover:text-violet-600 transition"
               >
                 Jeux vidéo
                
