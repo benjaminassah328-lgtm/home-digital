@@ -37,14 +37,14 @@ export default function Infos() {
             <div className="max-w-5xl w-full text-center mt-2">
                 <div className="flex flex-col-reverse justify-center items-center bg-white rounded-3xl ">
                     <Image
-                            src="/images/logo2.jpeg"
+                            src="/images/logoHD.jpeg"
                             alt="Home Digital"
                             width={100}
                             height={100}
                             className="rounded-xl -mt-5"
                           />
                           <motion.h1
-                    className="text-4xl font-bold text-blue-600 mb-6 text-center font-raleway    "
+                    className="text-4xl font-bold text-violet-600 mb-6 text-center font-raleway    "
                     initial={{ opacity: 0, y: -40 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
@@ -84,7 +84,7 @@ export default function Infos() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <h2 className="text-2xl font-semibold text-blue-600 mb-4">Notre Mission</h2>
+                    <h2 className="text-2xl font-semibold text-violet-600 mb-4">Notre Mission</h2>
                     <p className="text-gray-600 font-lora">
                         Rendre la technologie accessible, innovante et durable pour chaque foyer,
                         avec un service client irréprochable.
@@ -98,7 +98,7 @@ export default function Infos() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <h2 className="text-2xl font-semibold text-blue-600 sm:text-blue-600 mb-6">Nos Valeurs</h2>
+                    <h2 className="text-2xl font-semibold text-violet-600 sm:text-violet-600 mb-6">Nos Valeurs</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {[
                             { icon: "🚀", title: "Innovation", text: "Toujours à la pointe." },
@@ -125,7 +125,7 @@ export default function Infos() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <h2 className="text-2xl font-semibold text-blue-600 mb-4">Notre Histoire</h2>
+                    <h2 className="text-2xl font-semibold text-violet-600 mb-4">Notre Histoire</h2>
                     <p className="text-gray-600 font-lora mb-4">
                         Fondée en 2025, HomeDigital a commencé comme une boutique en ligne spécialisée
                         dans les gadgets domestiques.
@@ -138,7 +138,7 @@ export default function Infos() {
 
                 {/* ÉQUIPE – SLIDER INFINI */}
                 <motion.h2
-                    className="text-2xl font-semibold text-blue-400 mb-6"
+                    className="text-2xl font-semibold text-violet-600 mb-6"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.8 }}
@@ -187,7 +187,7 @@ export default function Infos() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                 >
-                    <h2 className="text-2xl font-semibold text-blue-600 mb-6">Témoignages Clients</h2>
+                    <h2 className="text-2xl font-semibold text-violet-600 mb-6">Témoignages Clients</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <motion.div
                             className="text-left"
@@ -222,7 +222,7 @@ export default function Infos() {
                 >
                     <a
                         href="/Contact"
-                        className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+                        className="bg-violet-600 text-white px-6 py-3 rounded-lg  hover:bg-violet-700 transition"
                     >
                         Contactez-nous
                     </a>

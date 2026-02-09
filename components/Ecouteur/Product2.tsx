@@ -6,16 +6,16 @@ import { ajouterAuPanier, Produit } from "@/components/Panier/Checkout";
 
 export default function ProduitsCasque() {
   const produits: Produit[] = [
-    { id: 10, nom: "Casque 1", prix: 280000, image: "/images/c1.jpeg" },
-    { id: 11, nom: "Casque 2", prix: 250000, image: "/images/c2.jpeg" },
-    { id: 12, nom: "Casque 3", prix: 190000, image: "/images/c3.jpeg" },
+    { id: 10, nom: "AirPods Max (Silver)", prix: 350000, image: "/images/c1.jpeg" },
+    { id: 11, nom: "Beats Studio3", prix: 130000, image: "/images/c2.jpeg" },
+    { id: 12, nom: "Nothing Headphone", prix: 100000, image: "/images/c3.jpeg" },
 
-    { id: 13, nom: "AirPods 1", prix: 280000, image: "/images/a1.jpeg" },
-    { id: 14, nom: "AirPods 2", prix: 250000, image: "/images/a2.jpeg" },
-    { id: 15, nom: "AirPods 3", prix: 190000, image: "/images/a3.jpeg" },
-        { id: 16, nom: "AirPods 4", prix: 190000, image: "/images/Airpods 4.jpeg" },    
-                  { id: 17, nom: "AirPods 5", prix: 190000, image: "/images/Airpods 5.jpeg" },
-                          { id: 18, nom: "AirPods 6", prix: 190000, image: "/images/Airpods 6.jpeg" },
+    { id: 13, nom: "AirPods Pro (2e Gen)", prix: 169900, image: "/images/a1.jpeg" },
+    { id: 14, nom: "AirPods Pro (Boîtier)", prix: 169900, image: "/images/a2.jpeg" },
+    { id: 15, nom: "AirPods Pro (Noir)", prix: 25000, image: "/images/a3.jpeg" },
+        { id: 16, nom: "AirPods Pro (Noir)", prix: 25000, image: "/images/Airpods 4.jpeg" },    
+                  { id: 17, nom: "TWS avec Écran LED", prix: 15000, image: "/images/Airpods 5.jpeg" },
+                          { id: 18, nom: "M10 / F9 TWS", prix: 10000, image: "/images/Airpods 6.jpeg" },
 
 
 

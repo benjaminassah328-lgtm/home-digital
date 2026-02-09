@@ -7,7 +7,7 @@ export default function ProductsNav() {
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 ">
         
         {/* Titre Produits */}
-        <div className="text-blue-600 text-lg font-semibold">
+        <div className="text-violet-400 text-lg font-semibold">
           <Link href="/produits" className="hover:text-violet-400 transition">
             Produits
           </Link>

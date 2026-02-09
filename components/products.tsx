@@ -29,11 +29,11 @@ export default function Products() {
 
       <motion.div
         className="flex gap-4 md:gap-6"
-        animate={{ x: ["0%", "-50%"] }}
+        animate={{ x: ["0%", "-300%"] }}
         transition={{
           repeat: Infinity,
           repeatType: "loop",
-          duration: 30, // plus lent = plus fluide
+          duration: 30, 
           ease: "linear",
         }}
       >

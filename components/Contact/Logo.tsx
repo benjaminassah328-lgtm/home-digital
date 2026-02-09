@@ -19,7 +19,7 @@ export default function Page() {
         <div className="flex justify-center -mt-9">
           <div className="bg-white p-2 rounded-full shadow-lg">
             <Image
-              src="/images/logo2.jpeg"
+              src="/images/logoHD.jpeg"
               alt="Home Digital"
               width={120}
               height={120}
@@ -75,7 +75,7 @@ export default function Page() {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg font-semibold transition"
+            className="w-full bg-violet-600 hover:bg-violet-700 text-white py-2 rounded-lg font-semibold transition"
             type="submit"
           >
             Envoyer
