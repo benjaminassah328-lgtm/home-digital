@@ -37,10 +37,10 @@ export default function Infos() {
             <div className="max-w-5xl w-full text-center mt-2">
                 <div className="flex flex-col-reverse justify-center items-center bg-white rounded-3xl ">
                     <Image
-  src="/images/logo2.jpeg"
+  src="/images/logoHD.jpeg"
   alt="Home Digital"
-  width={100}
-  height={100}
+width={50}
+  height={50}
   className="rounded-xl w-full max-w-30 h-auto object-contain"
 />
 
