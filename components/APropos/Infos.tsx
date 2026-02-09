@@ -37,12 +37,13 @@ export default function Infos() {
             <div className="max-w-5xl w-full text-center mt-2">
                 <div className="flex flex-col-reverse justify-center items-center bg-white rounded-3xl ">
                     <Image
-                            src="/images/logoHD.jpeg"
-                            alt="Home Digital"
-                            width={100}
-                            height={100}
-                            className="rounded-xl -mt-5"
-                          />
+  src="/images/logoHD.jpeg"
+  alt="Home Digital"
+  width={100}
+  height={100}
+  className="rounded-xl w-full max-w-30 h-auto object-contain"
+/>
+
                           <motion.h1
                     className="text-4xl font-bold text-violet-600 mb-6 text-center font-raleway    "
                     initial={{ opacity: 0, y: -40 }}

@@ -19,12 +19,13 @@ export default function Page() {
         <div className="flex justify-center -mt-9">
           <div className="bg-white p-2 rounded-full shadow-lg">
             <Image
-              src="/images/logoHD.jpeg"
-              alt="Home Digital"
-              width={120}
-              height={120}
-              className="rounded-full"
-            />
+  src="/images/logoHD.jpeg"
+  alt="Home Digital"
+  width={100}
+  height={100}
+  className="rounded-2xl w-full max-w-30 h-auto object-contain"
+/>
+
           </div>
         </div>
 
