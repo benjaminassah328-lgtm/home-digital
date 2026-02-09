@@ -9,7 +9,7 @@ export default function ProductsNav() {
         {/* Titre Produits */}
         <div className="text-violet-400 text-lg font-semibold">
           <Link href="/produits" className="hover:text-violet-600 transition">
-            Produit
+            Produits
           </Link>
         </div>
 
