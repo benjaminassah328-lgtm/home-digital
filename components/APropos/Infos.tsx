@@ -236,6 +236,30 @@ export default function Infos() {
                             </p>
                             <p className="text-gray-800 font-bold">- Christ Stephane ., Botro</p>
                         </motion.div>
+
+                         <motion.div
+                            className="text-left"
+                            initial={{ opacity: 0, x: 50 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.6, delay: 0.6 }}
+                        >
+                            <p className="text-gray-600 font-lora italic mb-2">
+                                "Les claviers sont de bonne qualité, et la livraison a été impeccable. Je recommande !"
+                            </p>
+                            <p className="text-gray-800 font-bold">- Christ Stephane ., Botro</p>
+                        </motion.div>
+
+                         <motion.div
+                            className="text-left"
+                            initial={{ opacity: 0, x: 50 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.6, delay: 0.6 }}
+                        >
+                            <p className="text-gray-600 font-lora italic mb-2">
+                                "Les claviers sont de bonne qualité, et la livraison a été impeccable. Je recommande !"
+                            </p>
+                            <p className="text-gray-800 font-bold">- Christ Stephane ., Botro</p>
+                        </motion.div>
                     </div>
                 </motion.div>
 
