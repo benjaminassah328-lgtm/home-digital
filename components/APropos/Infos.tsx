@@ -37,7 +37,7 @@ export default function Infos() {
             <div className="max-w-5xl w-full text-center mt-2">
                 <div className="flex flex-col-reverse justify-center items-center bg-white rounded-3xl ">
                     <Image
-  src="/images/logo2.jpeg"
+  src="/images/logonew.jpeg"
   alt="Home Digital"
   width={100}
   height={100}
@@ -251,6 +251,30 @@ export default function Infos() {
                         </motion.div>
 
                          <motion.div
+                            className="text-left"
+                            initial={{ opacity: 0, x: 50 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.6, delay: 0.6 }}
+                        >
+                            <p className="text-gray-600 font-lora italic mb-2">
+                                "Les claviers sont de bonne qualité, et la livraison a été impeccable. Je recommande !"
+                            </p>
+                            <p className="text-gray-800 font-bold">- Christ Stephane ., Botro</p>
+                        </motion.div>
+
+                        <motion.div
+                            className="text-left"
+                            initial={{ opacity: 0, x: 50 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.6, delay: 0.6 }}
+                        >
+                            <p className="text-gray-600 font-lora italic mb-2">
+                                "Les claviers sont de bonne qualité, et la livraison a été impeccable. Je recommande !"
+                            </p>
+                            <p className="text-gray-800 font-bold">- Christ Stephane ., Botro</p>
+                        </motion.div>
+
+                        <motion.div
                             className="text-left"
                             initial={{ opacity: 0, x: 50 }}
                             animate={{ opacity: 1, x: 0 }}

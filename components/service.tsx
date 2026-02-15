@@ -1,8 +1,5 @@
-
-
-
-import { Van, MessageCircleReply, PiggyBank, Headset } from "lucide-react";
-
+import { Van, MessageCircleReply, PiggyBank, Headset, } from "lucide-react";
+import Link from "next/link";
 export default function Services() {
   return (
     <section className="bg-linear-to-r from-indigo-900 via-purple-900 to-black py-12 px-4">
@@ -11,18 +8,18 @@ export default function Services() {
         
         {/* Livraison */}
         <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 text-center hover:scale-105 transition">
-          <div className="flex justify-center mb-3">
+          <Link href="/Livraison" className="flex justify-center mb-3">
             <Van className="w-10 h-10 text-violet-400" />
-          </div>
+          </Link>
           <h2 className="font-semibold text-white">Livraison</h2>
           <p className="text-sm text-gray-300 mt-1">Livraison rapide</p>
         </div>
 
         {/* Retour */}
         <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 text-center hover:scale-105 transition">
-          <div className="flex justify-center mb-3">
+          <Link href="/Retour" className="flex justify-center mb-3">
             <MessageCircleReply className="w-10 h-10 text-violet-400" />
-          </div>
+          </Link>
           <h2 className="font-semibold text-white">
             Politique de retour
           </h2>
@@ -31,21 +28,25 @@ export default function Services() {
           </p>
         </div>
 
-        {/* Réduction */}
+        {/* Services informatiques */}
         <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 text-center hover:scale-105 transition">
-          <div className="flex justify-center mb-3">
+          <Link href="/ServiceInformatique" className="flex justify-center mb-3">
             <PiggyBank className="w-10 h-10 text-violet-400" />
-          </div>
-          <h2 className="font-semibold text-white">Bon de réduction</h2>
+          </Link>
+          <h2 className="font-semibold text-white">Services informatiques</h2>
           <p className="text-sm text-gray-300 mt-1">
-            Achetez malin, économisez plus
+            Installation de logiciels, configuration PC, optimisation & sécurité
           </p>
         </div>
 
         {/* Service client */}
         <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 text-center hover:scale-105 transition">
           <div className="flex justify-center mb-3">
-            <Headset className="w-10 h-10 text-violet-400" />
+            <div>
+             <Link href="/Contact">
+              <Headset className="w-10 h-10 text-violet-400" />
+             </Link>
+            </div>
           </div>
           <h2 className="font-semibold text-white">Service client</h2>
           <p className="text-sm text-gray-300 mt-1">

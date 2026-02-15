@@ -10,11 +10,11 @@ export default function ProduitsBureautique() {
     { id: 2, nom: "Clavier", prix: 10000, image: "/images/clavier.jpeg" },
     { id: 3, nom: "Support Ordinateur", prix: 10000, image: "/images/supportordi.jpeg" },
 
-        { id: 13, nom: "Moniteur1", prix: 10000, image: "/images/Moniteur1.jpeg" },
+    { id: 13, nom: "Moniteur1", prix: 10000, image: "/images/Moniteur1.jpeg" },
     { id: 14, nom: "Moniteur2", prix: 10000, image: "/images/Moniteur2.jpeg" },
     { id: 15, nom: "Moniteur3", prix: 10000, image: "/images/Moniteur3.jpeg" },
 
-    
+
     { id: 16, nom: "Clavier lunineux1", prix: 10000, image: "/images/clavierlumineux1.jpeg" },
     { id: 17, nom: "Clavier lunineux2", prix: 10000, image: "/images/clavierlumineux2.jpeg" },
     { id: 18, nom: "Clavier lunineux3", prix: 10000, image: "/images/clavierlumineux3.jpeg" },
@@ -30,13 +30,13 @@ export default function ProduitsBureautique() {
 
     { id: 10, nom: "Clé USB 1", prix: 20000, image: "/images/clé1.jpeg" },
     { id: 11, nom: "Clé USB 2", prix: 20000, image: "/images/clé2.jpeg" },
-    { id: 12, nom: "Clé USB 3", prix: 20000, image: "/images/clé3.jpeg" },  
+    { id: 12, nom: "Clé USB 3", prix: 20000, image: "/images/clé3.jpeg" },
 
-    { id: 19, nom: "Projecteur 1", prix: 20000, image: "/images/Project1.jpeg" },  
-    { id: 20, nom: "Projecteur 2", prix: 20000, image: "/images/Project2.jpeg" },  
+    { id: 19, nom: "Projecteur 1", prix: 20000, image: "/images/Project1.jpeg" },
+    { id: 20, nom: "Projecteur 2", prix: 20000, image: "/images/Project2.jpeg" },
     { id: 21, nom: "Projecteur 3", prix: 20000, image: "/images/Project3.jpeg" },
 
-    
+
   ];
 
   const [, setRefresh] = useState(false);
