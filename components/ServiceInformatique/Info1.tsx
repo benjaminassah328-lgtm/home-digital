@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { ajouterAuPanier } from "@/components/Panier/Checkout";
 
 // ============================================================================
 // TYPES & INTERFACES
@@ -21,6 +22,7 @@ type Software = {
   category: string;
   icon: string;
   description: string;
+  image?: string;
 };
 
 // ============================================================================
@@ -52,10 +54,10 @@ const services: Service[] = [
 ];
 
 const softwares: Software[] = [
-  { id: 1, name: "Microsoft Office 365", price: "99", category: "Bureau", icon: "📝", description: "Suite complète de productivité" },
-  { id: 2, name: "Adobe Creative Suite", price: "54.99", category: "Design", icon: "🎨", description: "Outils professionnels de création" },
-  { id: 3, name: "Antivirus Norton", price: "49", category: "Sécurité", icon: "🛡️", description: "Protection maximale" },
-  { id: 4, name: "Visual Studio Code", price: "0", category: "Développement", icon: "💻", description: "Éditeur de code professionnel" },
+  { id: 1, name: "Microsoft Office 365", price: "99", category: "Bureau", icon: "📝", description: "Suite complète de productivité", image: "/images/office365.png" },
+  { id: 2, name: "Adobe Creative Suite", price: "54.99", category: "Design", icon: "🎨", description: "Outils professionnels de création", image: "/images/adobe.png" },
+  { id: 3, name: "Antivirus Norton", price: "49", category: "Sécurité", icon: "🛡️", description: "Protection maximale", image: "/images/norton.png" },
+  { id: 4, name: "Visual Studio Code", price: "0", category: "Développement", icon: "💻", description: "Éditeur de code professionnel", image: "/images/vscode.png" },
 ];
 
 // ============================================================================
@@ -67,6 +69,7 @@ export default function Infos1() {
   const [selectedSoftwares, setSelectedSoftwares] = useState<number[]>([]);
   const [activeCategory, setActiveCategory] = useState<string>("Tous");
   const [showCart, setShowCart] = useState(false);
+  const [addedMessage, setAddedMessage] = useState<{ id: number; name: string } | null>(null);
 
   // ---------- CALCULS ET LOGIQUE ----------
   const categories = ["Tous", ...new Set(softwares.map((s) => s.category))];
@@ -77,6 +80,20 @@ export default function Infos1() {
       : softwares.filter((s) => s.category === activeCategory);
 
   const toggleSoftware = (id: number) => {
+    const software = softwares.find((s) => s.id === id);
+    if (software) {
+      const produit = {
+        id: software.id,
+        nom: software.name,
+        prix: parseFloat(software.price),
+        image: software.image || "/images/default.png",
+      };
+      ajouterAuPanier(produit);
+      
+      // Affiche une notification
+      setAddedMessage({ id: software.id, name: software.name });
+      setTimeout(() => setAddedMessage(null), 2000);
+    }
     setSelectedSoftwares((prev) =>
       prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id]
     );
@@ -232,6 +249,18 @@ export default function Infos1() {
               </>
             )}
           </div>
+        )}
+
+        {/* NOTIFICATION DE CONFIRMATION */}
+        {addedMessage && (
+          <motion.div
+            className="fixed bottom-6 left-6 bg-green-600 text-white px-6 py-3 rounded-lg font-bold"
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -50 }}
+          >
+            ✓ {addedMessage.name} ajouté au panier
+          </motion.div>
         )}
       </div>
     </main>
