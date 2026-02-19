@@ -42,11 +42,11 @@ export default function Header() {
 
         {/* MENU DESKTOP */}
         <nav className="hidden md:flex gap-6 font-lora text-gray-900">
-          <Link href="/" className="hover:text-blue-600">Accueil</Link>
-          <Link href="/produits" className="hover:text-blue-600">Produits</Link>
-          <Link href="/Contact" className="hover:text-blue-600">Contact</Link>
-          <Link href="/Panier" className="hover:text-blue-600">Panier</Link>
-                    <Link href="/Apropos" className="hover:text-blue-600">A Propos</Link>
+          <Link href="/" className="hover:text-violet-600">Accueil</Link>
+          <Link href="/produits" className="hover:text-violet-600">Produits</Link>
+          <Link href="/Contact" className="hover:text-violet-600">Contact</Link>
+          <Link href="/Panier" className="hover:text-violet-600">Panier</Link>
+                    <Link href="/Apropos" className="hover:text-violet-600">A Propos</Link>
 
         </nav>
 

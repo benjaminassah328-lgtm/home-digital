@@ -61,3 +61,5 @@ POSTGRES_PRISMA_URL=postgresql://neondb_owner:npg_zZhSITMBp9u4@ep-gentle-violet-
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+/app/generated/prisma
