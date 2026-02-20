@@ -9,7 +9,7 @@ export default function Hero() {
       initial={{ opacity: 0, y: -40 }}
       animate={{ opacity: 1, y: 0 }}
     >
-      <h1 className="text-5xl font-bold bg-linear-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent mb-4 font-orbitron">
+      <h1 className="text-5xl font-bold bg-linear-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent mb-4 font-orbitron m-4 sm:text-6xl">
         Services Informatiques
       </h1>
       <p className="text-purple-300 font-lora">
