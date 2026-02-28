@@ -14,7 +14,7 @@ export default function Page() {
     e.preventDefault();
 
     const message = `Bonjour Home Digital,%0A%0A
-Nom: ${nom}%0A
+Nom: ${nom}%0A 
 Email: ${email}%0A
 Message: ${messageClient}`;
 
