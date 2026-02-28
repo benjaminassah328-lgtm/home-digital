@@ -267,7 +267,7 @@ export const softwares: Software[] = [
     licenses: [
       { type: "personnel", duration: "perpetuel", users: 999, support: false },
     ],
-    stock: 999,
+    stock: 10,
     rating: 4.7,
     reviews: 8934,
     features: ["Tous les formats", "Sans publicités", "Open-source", "Personnalisable"],
