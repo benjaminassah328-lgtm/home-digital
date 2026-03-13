@@ -41,8 +41,8 @@ Message: ${messageClient}`;
         <div className="flex justify-center -mt-9">
           <div className="bg-white p-2 rounded-full shadow-lg">
             <Image
-              src="/images/logo2.jpeg"
-              alt="Home Digital"
+              src="/images/logonew.jpeg"
+              alt="mon logo pour mon site de vente de produits électroniques Home Digital"
               width={100}
               height={100}
               className="rounded-2xl w-2xl max-w-30 h-auto object-contain"
