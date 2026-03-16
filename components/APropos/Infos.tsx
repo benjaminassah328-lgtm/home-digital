@@ -269,7 +269,7 @@ export default function Infos() {
                             transition={{ duration: 0.6, delay: 0.6 }}
                         >
                             <p className="text-gray-600 font-lora italic mb-2">
-                                "Les claviers sont de bonne qualité, et la livraison a été impeccable. Je recommande !"
+                                "Les claviers sont de bonne qualité, et la livraison a été impeccable. Je recommande ! Merci beaucoup"
                             </p>
                             <p className="text-gray-800 font-bold">- Christ Stephane ., Botro</p>
                         </motion.div>
@@ -283,7 +283,7 @@ export default function Infos() {
                             <p className="text-gray-600 font-lora italic mb-2">
                                 "Les claviers sont de bonne qualité, et la livraison a été impeccable. Je recommande !"
                             </p>
-                            <p className="text-gray-800 font-bold">- Christ Stephane ., Botro</p>
+                            <p className="text-gray-800 font-bold">- OLibram ., Botro</p>
                         </motion.div>
                     </div>
                 </motion.div>
