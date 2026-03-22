@@ -1,10 +1,6 @@
+import { Produit } from "@/data/produits";
 
-export interface Produit {
-    id: number;
-    nom: string;
-    prix: number;
-    image: string;
-}
+
 
 export interface ProduitPanier extends Produit {
     quantite: number;

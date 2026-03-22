@@ -1,14 +1,15 @@
 import Header from "@/components/produits/header";
-import ProduitsBureautiques from "@/components/bureautique/ProductsBureautiques";
-import ProduitsCasque from "@/components/Ecouteur/Product2";
-import ProduitsJeuxVideo from "@/components/Jeux_video/produits";
-export default function Page(){
-    return(
+import { produits } from "@/data/produits";
+import ProduitCard from "@/components/produits/produitCard";
+export default function Page() {
+    return (
         <main className="">
             <Header />
-              <ProduitsBureautiques/>
-<ProduitsCasque/>
-<ProduitsJeuxVideo/>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                {produits.map(p => (
+                    <ProduitCard id={p.id} nom={p.nom} image={p.image} prix={p.prix} categorie={p.categorie} />
+                ))}
+            </div>
 
 
 
